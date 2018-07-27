@@ -91,11 +91,42 @@ arr2;
 
 
 // Js Tricks
-
-var arr3 = [-1,2,3,4,5,100,2000];
+console.log (
+`var arr3 = [-1,2,3,4,5,100,2000];
 
 var num = 1.1234567
 
 num = num.toFixed(2);
 
 console.log ( parseFloat (num) );
+`)
+var arr3 = [-1,2,3,4,5,100,2000];
+
+var num = 1.1234567
+
+num = num.toFixed(2);
+
+
+console.log ( "//" ,parseFloat ( num) );
+
+
+
+// Js Tricks
+
+// var person = {name :'Rohito', age : 29, department : {ID : 12, name : "Product Development"} };
+
+console.log( "JSON.stringify([]) // Returns String" ) ;
+
+console.log( "JSON.parse([]) // Returns Object")
+
+
+console.log (`
+setInterval('doSomethingPeriodically()', 1000);
+setTimeout('doSomethingAfterFiveSeconds()', 5000);
+
+VS
+
+setInterval(doSomethingPeriodically, 1000);
+setTimeout(doSomethingAfterFiveSeconds, 5000);
+
+`)
