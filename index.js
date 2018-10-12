@@ -1,4 +1,60 @@
 
+// setTimeout --> Call Back Stack 
+
+setTimeout( () => {
+    console.log("a")
+  },0 )
+  
+  console.log("b")
+  console.log("c")
+
+//   "b"
+//   "c"
+//   "a"
+
+
+// Block Scope Vs Function Scope // Var vs Let
+
+const testFunction = function(){
+
+    console.log(letVaraible); // block scope 
+    console.log(varVariable); // function scope 
+    
+      (function testFunc(){
+        let letVaraible = "let"; // letVaraible is not defined
+        var varVariable = "var"; // available
+          
+      }())
+  }
+  
+  testFunction();
+
+  // Const 
+
+  const randomNumber = 2; 
+  randomNumber = 3; // Assignment to constant variable.
+
+  const numbers = [1,2];
+  numbers.push(3);
+  console.log(numbers); // [1,2,3]
+
+
+// Function Expression Vs Function Declaration 
+
+funcDeclaration();
+funcExpression(); // Undefined 
+
+function funcDeclaration(){
+    console.log("function declaration")
+    // Available Above declaration 
+}
+
+const funcExpression = function (){
+    console.log('function expression')
+
+    // Acts as a variable - Not Available Above Expression
+}
+
 // Js Tricks
 
 // The == (or !=) operator performs an automatic type conversion if needed.
